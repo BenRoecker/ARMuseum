@@ -9,7 +9,7 @@ public class ScaleUpdate : MonoBehaviour
     Vector3 dist;
     float mod = 0;
     float min = 0.2f;
-
+    [SerializeField] private ResultManager resultManager;
     void Update()
     {
         MarkDist SpherePosition = Image1.GetComponent<MarkDist>();
@@ -20,7 +20,7 @@ public class ScaleUpdate : MonoBehaviour
             mod = dist.magnitude;
             if(mod < min)
             {
-                Debug.LogWarning("Nice");
+                resultManager.ShowResult();
             }
             Debug.Log("module" + mod);
         }
