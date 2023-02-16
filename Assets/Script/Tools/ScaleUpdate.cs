@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ScaleUpdate : MonoBehaviour
 {
@@ -9,20 +11,44 @@ public class ScaleUpdate : MonoBehaviour
     Vector3 dist;
     float mod = 0;
     float min = 0.2f;
-    [SerializeField] private ResultManager resultManager;
+    [SerializeField] private TextMeshProUGUI textTuto;
+    [SerializeField] private CanvasManagerTuto canvasManager;
+
+    private void Start()
+    {
+        
+    }
     void Update()
     {
-        MarkDist SpherePosition = Image1.GetComponent<MarkDist>();
-        MarkDist CubePosition = Image2.GetComponent<MarkDist>();
-        dist = SpherePosition.delta - CubePosition.delta;
-        if (SpherePosition.goIn == true && CubePosition.goIn == true)
+        textTuto.text = "Recherchez les cartes suivantes : ";
+        MarkDist Image1Position = Image1.GetComponent<MarkDist>();
+        MarkDist Image2Position = Image2.GetComponent<MarkDist>();
+        dist = Image1Position.delta - Image2Position.delta;
+        if (Image1Position.goIn == false && Image2Position.goIn)
         {
+            textTuto.text += "1";
+        }
+        else if(Image2Position.goIn == false && Image1Position.goIn)
+        {
+            textTuto.text += "2";
+        }
+        else if(Image2Position.goIn == false && Image1Position.goIn == false)
+        {
+            textTuto.text += "1 et 2";
+        }
+        if (Image1Position.goIn && Image2Position.goIn)
+        {
+            textTuto.gameObject.SetActive(false);
             mod = dist.magnitude;
             if(mod < min)
             {
-                resultManager.ShowResult();
+                canvasManager.ShowResult();
             }
             Debug.Log("module" + mod);
+        }
+        else
+        {
+            textTuto.gameObject.SetActive(true);
         }
     }
 }
