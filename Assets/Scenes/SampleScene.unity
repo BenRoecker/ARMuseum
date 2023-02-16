@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &180525998
 Transform:
   m_ObjectHideFlags: 0
@@ -233,15 +233,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84cd5ab353ed2564f8de24d4d716086d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84cd5ab353ed2564f8de24d4d716086d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84cd5ab353ed2564f8de24d4d716086d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84cd5ab353ed2564f8de24d4d716086d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,6 +301,83 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 59c868bafa2aeb2489b2bd84a1689205, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cd5ab353ed2564f8de24d4d716086d, type: 3}
+--- !u!1001 &388442037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 961167387}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.066
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0063622766
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95980626
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.28066346
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -32.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 59c868bafa2aeb2489b2bd84a1689205, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+      propertyPath: m_Name
+      value: Lock
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2de375912e561fb44892224381ce5e49, type: 3}
 --- !u!1 &454880483
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,14 +568,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: pokemon
+  mTrackableName: Fissure
   mInitializedInEditor: 1
-  mDataSetPath: 
-  mAspectRatio: 1.3966244
-  mImageTargetType: 3
-  mWidth: 0.14320242
-  mHeight: 0.2
-  mRuntimeTexture: {fileID: 2800000, guid: 0e0657511e9c52845a5578cc8f46701e, type: 3}
+  mDataSetPath: Vuforia/VuforiaMars_Images.xml
+  mAspectRatio: 1.7272727
+  mImageTargetType: 0
+  mWidth: 0.06985
+  mHeight: 0.12065
+  mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -548,8 +625,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 553302106}
   mHiddenRoot: {fileID: 0}
-  mTargetName: pokemon
-  mDatasetName: 
+  mTargetName: Fissure
+  mDatasetName: Vuforia/VuforiaMars_Images.xml
   mCastedBehaviour: {fileID: 553302106}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -725,14 +802,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: sneasel
+  mTrackableName: Astronaut
   mInitializedInEditor: 1
-  mDataSetPath: 
-  mAspectRatio: 1.3913044
-  mImageTargetType: 3
-  mWidth: 0.14375
-  mHeight: 0.2
-  mRuntimeTexture: {fileID: 2800000, guid: 292321cfb80475949b7730d0eccdd233, type: 3}
+  mDataSetPath: Vuforia/VuforiaMars_Images.xml
+  mAspectRatio: 1.7272727
+  mImageTargetType: 0
+  mWidth: 0.06985
+  mHeight: 0.12065
+  mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -751,6 +828,7 @@ Transform:
   m_Children:
   - {fileID: 1414441179}
   - {fileID: 180525998}
+  - {fileID: 1739605302}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -783,8 +861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 961167386}
   mHiddenRoot: {fileID: 0}
-  mTargetName: sneasel
-  mDatasetName: 
+  mTargetName: Astronaut
+  mDatasetName: Vuforia/VuforiaMars_Images.xml
   mCastedBehaviour: {fileID: 961167386}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -806,7 +884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1414441179
 Transform:
   m_ObjectHideFlags: 0
@@ -907,6 +985,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ebb8fab3c45b840b33b7b6395d4e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1739605302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2de375912e561fb44892224381ce5e49, type: 3}
+  m_PrefabInstance: {fileID: 388442037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2017102393
 GameObject:
   m_ObjectHideFlags: 0
