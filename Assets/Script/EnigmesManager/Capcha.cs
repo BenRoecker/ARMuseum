@@ -52,13 +52,13 @@ public class Capcha : MonoBehaviour
         var trackableHeartOne = m_imageTargetHeartOne.GetComponent<ObserverBehaviour>();
         var statusHeartOne = trackableHeartOne.TargetStatus.Status;
 
-        var trackableHeartTwo = m_imageTargetHeartOne.GetComponent<ObserverBehaviour>();
+        var trackableHeartTwo = m_imageTargetHeartTwo.GetComponent<ObserverBehaviour>();
         var statusHeartTwo = trackableHeartTwo.TargetStatus.Status;
 
-        var trackableHeartThree = m_imageTargetHeartOne.GetComponent<ObserverBehaviour>();
+        var trackableHeartThree = m_imageTargetHeartThree.GetComponent<ObserverBehaviour>();
         var statusHeartThree = trackableHeartThree.TargetStatus.Status;
 
-        var trackableBrainOne = m_imageTargetHeartOne.GetComponent<ObserverBehaviour>();
+        var trackableBrainOne = m_imageTargetBrainOne.GetComponent<ObserverBehaviour>();
         var statusBrainOne = trackableBrainOne.TargetStatus.Status;
 
         /*var trackableBrainTwo = m_imageTargetHeartOne.GetComponent<ObserverBehaviour>();
@@ -80,9 +80,9 @@ public class Capcha : MonoBehaviour
         {
             m_allTrackedOnce = true;
         }
-        else if(m_allTrackedOnce == true && m_riddleSolve == false && statusBrainOne == Status.TRACKED && (statusHeartOne == Status.TRACKED == false) && (statusHeartTwo == Status.TRACKED == false) && (statusHeartThree == Status.TRACKED == false) /*&& (statusBrainTwo == Status.TRACKED) == false && (statusBrainThree == Status.TRACKED) == false && (statusLungOne == Status.TRACKED) == false && (statusLungTwo == Status.TRACKED) == false && (statusLungThree == Status.TRACKED) == false && statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED*/)
+        else if(m_allTrackedOnce == true  && statusBrainOne == Status.TRACKED && (statusHeartOne == Status.TRACKED) == false && (statusHeartTwo == Status.TRACKED) == false && (statusHeartThree == Status.TRACKED) == false /*&& (statusBrainTwo == Status.TRACKED) == false && (statusBrainThree == Status.TRACKED) == false && (statusLungOne == Status.TRACKED) == false && (statusLungTwo == Status.TRACKED) == false && (statusLungThree == Status.TRACKED) == false && statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED*/)
         {
-            m_riddleSolve = true;
+
             m_solveCanvas.SetActive(true);
         }
     }
