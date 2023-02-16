@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 239383697}
   - component: {fileID: 239383696}
   - component: {fileID: 239383695}
-  - component: {fileID: 239383694}
+  - component: {fileID: 239383698}
   m_Layer: 0
   m_Name: ImageSphere (1)
   m_TagString: Untagged
@@ -553,25 +553,6 @@ Transform:
   m_Father: {fileID: 115251182}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &239383694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239383692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 239383697}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Fissure
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
-  mCastedBehaviour: {fileID: 239383697}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &239383695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,7 +637,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 239383694}
+  mPreview: {fileID: 239383698}
+--- !u!114 &239383698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239383692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 239383697}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Fissure
+  mDatasetName: Vuforia/VuforiaMars_Images.xml
+  mCastedBehaviour: {fileID: 239383697}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &277764095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 553302107}
   - component: {fileID: 553302106}
   - component: {fileID: 553302105}
-  - component: {fileID: 553302109}
+  - component: {fileID: 553302108}
   m_Layer: 0
   m_Name: ImageCube
   m_TagString: Untagged
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 553302109}
+  mPreview: {fileID: 553302108}
 --- !u!4 &553302107
 Transform:
   m_ObjectHideFlags: 0
@@ -1377,7 +1377,7 @@ Transform:
   m_Father: {fileID: 115251182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &553302109
+--- !u!114 &553302108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_imageTargetHeartOne: {fileID: 553302103}
-  m_modelHeartOne: {fileID: 0}
+  m_modelHeartOne: {fileID: 1933150023988134358}
   m_imageTargetHeartTwo: {fileID: 961167383}
   m_modelHeartTwo: {fileID: 1022020268}
   m_imageTargetHeartThree: {fileID: 239383692}
@@ -2097,7 +2097,7 @@ GameObject:
   - component: {fileID: 961167387}
   - component: {fileID: 961167386}
   - component: {fileID: 961167385}
-  - component: {fileID: 961167389}
+  - component: {fileID: 961167388}
   m_Layer: 0
   m_Name: ImageSphere
   m_TagString: Untagged
@@ -2174,7 +2174,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 961167389}
+  mPreview: {fileID: 961167388}
 --- !u!4 &961167387
 Transform:
   m_ObjectHideFlags: 0
@@ -2191,7 +2191,7 @@ Transform:
   m_Father: {fileID: 115251182}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &961167389
+--- !u!114 &961167388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2513,7 +2513,7 @@ GameObject:
   - component: {fileID: 1263296848}
   - component: {fileID: 1263296847}
   - component: {fileID: 1263296846}
-  - component: {fileID: 1263296845}
+  - component: {fileID: 1263296849}
   m_Layer: 0
   m_Name: ImageSphere (2)
   m_TagString: Untagged
@@ -2537,25 +2537,6 @@ Transform:
   m_Father: {fileID: 115251182}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1263296845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263296843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1263296848}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Oxygen
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
-  mCastedBehaviour: {fileID: 1263296848}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1263296846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2640,7 +2621,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1263296845}
+  mPreview: {fileID: 1263296849}
+--- !u!114 &1263296849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263296843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1263296848}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Oxygen
+  mDatasetName: Vuforia/VuforiaMars_Images.xml
+  mCastedBehaviour: {fileID: 1263296848}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1296289271
 GameObject:
   m_ObjectHideFlags: 0
