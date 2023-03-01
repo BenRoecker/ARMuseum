@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Brain3" size="0.135000 0.135000" />
+    <ImageTarget name="Brain2" size="0.135000 0.135000" />
+    <ImageTarget name="OxygenMask" size="0.135000 0.135000" />
+    <ImageTarget name="Key" size="0.135000 0.135000" />
+    <ImageTarget name="Lock" size="0.135000 0.135000" />
+    <ImageTarget name="Lungs" size="0.135000 0.135000" />
+    <ImageTarget name="Stethoscope2" size="0.135000 0.135000" />
+    <ImageTarget name="Heart2" size="0.135000 0.135000" />
+    <ImageTarget name="Electrocardiogram" size="0.135000 0.135000" />
+    <ImageTarget name="Brain" size="0.135000 0.135000" />
+    <ImageTarget name="Stethoscope" size="0.135000 0.135000" />
+    <ImageTarget name="OxygenBottle" size="0.135000 0.135000" />
+    <ImageTarget name="Heart" size="0.135000 0.135000" />
+    <ImageTarget name="Lung" size="0.135000 0.135000" />
+    <ImageTarget name="BloodBag" size="0.135000 0.135000" />
+  </Tracking>
+</QCARConfig>
