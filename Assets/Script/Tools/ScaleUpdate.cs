@@ -10,13 +10,15 @@ public class ScaleUpdate : MonoBehaviour
     public GameObject Image2 = null;
     Vector3 dist;
     float mod = 0;
-    float min = 0.2f;
+    float min = 0.1f;
     [SerializeField] private TextMeshProUGUI textTuto;
+    [SerializeField] private TextMeshProUGUI textTutoPlace;
     [SerializeField] private CanvasManagerTuto canvasManager;
 
     private void Start()
     {
-        
+        textTuto.transform.parent.gameObject.SetActive(false);
+        textTutoPlace.transform.parent.gameObject.SetActive(false);
     }
     void Update()
     {
@@ -38,7 +40,8 @@ public class ScaleUpdate : MonoBehaviour
         }
         if (Image1Position.goIn && Image2Position.goIn)
         {
-            textTuto.gameObject.SetActive(false);
+            textTuto.transform.parent.gameObject.SetActive(false);
+            textTutoPlace.transform.parent.gameObject.SetActive(false);
             mod = dist.magnitude;
             if(mod < min)
             {
@@ -48,7 +51,7 @@ public class ScaleUpdate : MonoBehaviour
         }
         else
         {
-            textTuto.gameObject.SetActive(true);
+            textTuto.transform.parent.gameObject.SetActive(true);
         }
     }
 }

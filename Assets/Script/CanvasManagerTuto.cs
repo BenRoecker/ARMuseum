@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class CanvasManagerTuto : MonoBehaviour
 {
-    #region value
-    [SerializeField] GameObject canvasCarte;
-    [SerializeField] GameObject cubeResult;
-    [SerializeField] GameObject OldSphere;
-    #endregion
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +18,6 @@ public class CanvasManagerTuto : MonoBehaviour
 
     public void ShowResult()
     {
-        
+        ScenesManager.Instance.EndTutoriel();
     }
 }
