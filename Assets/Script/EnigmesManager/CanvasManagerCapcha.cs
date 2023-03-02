@@ -8,17 +8,11 @@ public class CanvasManagerCapcha : MonoBehaviour
 {
 
     [Header("UI Element")]
-    public Button m_backToCurrentTimeButton;
     public Button m_infoButton;
     public Button m_hintButton;
 
-    public GameObject m_canvasInfo;
-    public GameObject m_canvasHint;
-
-    public string m_startScenen;
-
-    [Header("UI Solve")]
-    public Button m_backToCurrentTimeSolveButton;
+    public GameObject m_textInfo;
+    public GameObject m_textHint;
 
     public bool m_infoOn = false;
     public bool m_hintOn = false;
@@ -26,8 +20,6 @@ public class CanvasManagerCapcha : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_backToCurrentTimeButton.onClick.AddListener(BackToCurrentTime);
-        m_backToCurrentTimeSolveButton.onClick.AddListener(BackToCurrentTime);
         m_infoButton.onClick.AddListener(InfoCanvasManager);
         m_hintButton.onClick.AddListener(HintCanvasManager);
     }
@@ -38,21 +30,16 @@ public class CanvasManagerCapcha : MonoBehaviour
         
     }
 
-    public void BackToCurrentTime()
-    {
-        SceneManager.LoadScene(m_startScenen);
-    }
-
     public void InfoCanvasManager()
     {
         if(m_infoOn == false)
         {
-            m_canvasInfo.SetActive(true);
+            m_textInfo.SetActive(true);
             m_infoOn = true;
         }
         else if(m_infoOn == true)
         {
-            m_canvasInfo.SetActive(false);
+            m_textInfo.SetActive(false);
             m_infoOn = false;
         }
     }
@@ -61,12 +48,12 @@ public class CanvasManagerCapcha : MonoBehaviour
     {
         if (m_hintOn == false)
         {
-            m_canvasHint.SetActive(true);
+            m_textHint.SetActive(true);
             m_hintOn = true;
         }
         else if (m_hintOn == true)
         {
-            m_canvasHint.SetActive(false);
+            m_textHint.SetActive(false);
             m_hintOn = false;
         }
     }
