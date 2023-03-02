@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 59144394}
   - component: {fileID: 59144393}
   m_Layer: 0
-  m_Name: ImageKey (1)
+  m_Name: ImageKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,13 +151,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59144391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.236, y: -0.08645537, z: 0.0068775453}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 113277066}
-  m_Father: {fileID: 590844951}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &59144393
 MonoBehaviour:
@@ -366,38 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ebb8fab3c45b840b33b7b6395d4e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &119373761
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 119373762}
-  m_Layer: 0
-  m_Name: TargetCard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &119373762
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119373761}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.236, y: 0.08645537, z: -0.0068775453}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1029689426}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &147106111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -618,7 +586,7 @@ GameObject:
   - component: {fileID: 267894645}
   - component: {fileID: 267894644}
   m_Layer: 0
-  m_Name: ImageKey (1)
+  m_Name: ImageBrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,13 +600,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267894642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.236, y: -0.08645537, z: 0.0068775453}
+  m_LocalPosition: {x: 0.336, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 207638204}
-  m_Father: {fileID: 1899032507}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &267894644
 MonoBehaviour:
@@ -654,7 +622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 267894647}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Key
+  mTargetName: Brain
   mDatasetName: Vuforia/UnlockAR.xml
   mCastedBehaviour: {fileID: 267894647}
   mMeshFilter: {fileID: 0}
@@ -732,7 +700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Key
+  mTrackableName: Brain
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/UnlockAR.xml
   mAspectRatio: 1
@@ -856,38 +824,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &590844950
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 590844951}
-  m_Layer: 0
-  m_Name: TargetCard (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &590844951
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590844950}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.236, y: 0.08645537, z: -0.0068775453}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 59144392}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &661558362
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,11 +853,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8c96750b8fec841b994b570281e97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracker1: {fileID: 119373761}
+  tracker1: {fileID: 0}
   canvas1Ui: {fileID: 724162611}
-  tracker2: {fileID: 590844950}
+  tracker2: {fileID: 0}
   canvas2Ui: {fileID: 1549769182}
-  tracker3: {fileID: 1899032506}
+  tracker3: {fileID: 0}
   canvas3Ui: {fileID: 1756933952}
   count: 0
 --- !u!4 &661558364
@@ -1165,7 +1101,7 @@ GameObject:
   - component: {fileID: 1029689428}
   - component: {fileID: 1029689427}
   m_Layer: 0
-  m_Name: ImageKey (1)
+  m_Name: ImageLock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,13 +1115,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029689425}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.236, y: -0.08645537, z: 0.0068775453}
+  m_LocalPosition: {x: 0.18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 147106112}
-  m_Father: {fileID: 119373762}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1029689427
 MonoBehaviour:
@@ -1201,7 +1137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1029689430}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Key
+  mTargetName: Lock
   mDatasetName: Vuforia/UnlockAR.xml
   mCastedBehaviour: {fileID: 1029689430}
   mMeshFilter: {fileID: 0}
@@ -1279,7 +1215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Key
+  mTrackableName: Lock
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/UnlockAR.xml
   mAspectRatio: 1
@@ -1912,35 +1848,3 @@ RectTransform:
   m_AnchoredPosition: {x: -189, y: 0}
   m_SizeDelta: {x: 350, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1899032506
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1899032507}
-  m_Layer: 0
-  m_Name: TargetCard (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1899032507
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899032506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.236, y: 0.08645537, z: -0.0068775453}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 267894643}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
