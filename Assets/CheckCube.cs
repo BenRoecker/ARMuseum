@@ -80,6 +80,11 @@ public class CheckCube : MonoBehaviour
 
             m_riddleSolved = true;
 
+            URImage.gameObject.SetActive(false);
+            ULImage.gameObject.SetActive(false);
+            BRImage.gameObject.SetActive(false);
+            BLImage.gameObject.SetActive(false);
+
             Victory.SetActive(true);
         }
         else if (CubeUpLeft.transform.position.x < CubeUpRight.transform.position.x && CubeUpLeft.transform.position.y > CubeBottomRight.transform.position.y && CubeUpLeft.transform.position.x < CubeBottomLeft.transform.position.x && CubeUpLeft.transform.position.y > CubeBottomLeft.transform.position.y)
