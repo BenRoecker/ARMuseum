@@ -24,7 +24,9 @@ public class RiddleManager : MonoBehaviour
 
     public GameObject canvasFalseUi;
 
-    public int count = 0;
+    public bool trackedCardZero = true;
+    public bool trackedCardOne = false;
+    public bool trackedCardTwo = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,47 +45,42 @@ public class RiddleManager : MonoBehaviour
                 tracker7.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker8.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && 
                 tracker9.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker10.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED)
             {
-            while(tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED)
-            {
                 canvas1Ui.SetActive(true);
-            }
-            count = 1;
+                trackedCardOne = true;
             }
             
-        if (count == 1 && tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false &&
+        if (trackedCardOne == true && tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false &&
                 (tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false && tracker4.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED &&
                 tracker5.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker6.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED &&
                 tracker7.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker8.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED &&
                 tracker9.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker10.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED)
             {
-            while(tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED)
-            {
                 canvas2Ui.SetActive(true);
-            }
-            count = 2;
-            }
+            trackedCardTwo = true;
+            trackedCardOne = false;
+            trackedCardZero = false;
+}
 
-        if(count == 2 && tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false &&
+        if(trackedCardTwo == true && tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false &&
                 (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false && tracker4.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED &&
                 tracker5.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker6.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED &&
                 tracker7.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker8.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED &&
                 tracker9.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker10.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED)
             {
-                while(tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED)
-            {
                 canvas3Ui.SetActive(true);
-            }
-            count = 3;
+
         }
 
         if((tracker4.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED ||
                 tracker5.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED || tracker6.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED ||
                 tracker7.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED || tracker8.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED ||
                 tracker9.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED || tracker10.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) || 
-                (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && count != 0) || (tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && count != 1)
-                || (tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && count != 2))
+                (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (trackedCardTwo == true || trackedCardZero == false)) || 
+                (tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (trackedCardZero == true || trackedCardOne == false)) || 
+                (tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (trackedCardTwo == false || trackedCardZero == true)))
         {
-            count = 0;
+            trackedCardOne = false;
+            trackedCardTwo = false;
             canvasFalseUi.SetActive(true);
         }
     }
