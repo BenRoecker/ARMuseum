@@ -29,18 +29,19 @@ public class RiddleManager : MonoBehaviour
     {
         for(int i = 0; i < 1; i++)
         {
-            if (count == 0 && tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false && (tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false)
+            if (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && (tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false && (tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED) == false)
             {
                 count = 1;
                 canvas1Ui.SetActive(true);
             }
-            else if (count == 1 && tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED)
+            else if (tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED && tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED)
             {
                 count = 2;
                 canvas2Ui.SetActive(true);
             }
-            else if(count == 2 && tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED)
+            else if(tracker1.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker2.GetComponent<ObserverBehaviour>().TargetStatus.Status != Status.TRACKED && tracker3.GetComponent<ObserverBehaviour>().TargetStatus.Status == Status.TRACKED)
             {
+                count = 3;
                 canvas3Ui.SetActive(true);
             }
             else
