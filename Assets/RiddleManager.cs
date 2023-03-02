@@ -34,6 +34,7 @@ public class RiddleManager : MonoBehaviour
         canvas1Ui.SetActive(false);
         canvas2Ui.SetActive(false);
         canvas3Ui.SetActive(false);
+        canvasFalseUi.SetActive(false);
     }
 
     // Update is called once per frame
