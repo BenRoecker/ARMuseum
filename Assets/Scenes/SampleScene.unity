@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1660,7 +1660,7 @@ MonoBehaviour:
   Image1: {fileID: 553302103}
   Image2: {fileID: 961167383}
   textTuto: {fileID: 2044361801}
-  textTutoPlace: {fileID: 0}
+  textTutoPlace: {fileID: 695278383}
   canvasManager: {fileID: 2017102394}
 --- !u!4 &2123405550
 Transform:

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -348,7 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 239192157}
-  - component: {fileID: 239192156}
+  - component: {fileID: 239192158}
   m_Layer: 0
   m_Name: SetButton
   m_TagString: Untagged
@@ -356,23 +356,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &239192156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239192155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba489d14117cae44bf6875fa2d94b69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonUseds:
-  - m_button: {fileID: 1208339158}
-    m_sceneNumber: 2
-  - m_button: {fileID: 647428799}
-    m_sceneNumber: 2
 --- !u!4 &239192157
 Transform:
   m_ObjectHideFlags: 0
@@ -388,6 +371,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239192158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239192155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b1b33dbed75ef469125947b340aa43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttontoPause:
+  - {fileID: 1208339158}
 --- !u!1 &344565960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1129,7 @@ GameObject:
   - component: {fileID: 715289519}
   - component: {fileID: 715289522}
   - component: {fileID: 715289521}
-  - component: {fileID: 715289520}
+  - component: {fileID: 715289523}
   m_Layer: 0
   m_Name: ImageCubeBottomLeft
   m_TagString: Untagged
@@ -1155,25 +1152,6 @@ Transform:
   m_Father: {fileID: 6945173}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715289520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715289518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 715289522}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Electrocardiogram
-  mDatasetName: Vuforia/UnlockAR.xml
-  mCastedBehaviour: {fileID: 715289522}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &715289521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,7 +1221,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 715289520}
+  mPreview: {fileID: 715289523}
+--- !u!114 &715289523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715289518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 715289522}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Electrocardiogram
+  mDatasetName: Vuforia/UnlockAR.xml
+  mCastedBehaviour: {fileID: 715289522}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &736522123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,7 +2227,7 @@ GameObject:
   - component: {fileID: 1938846076}
   - component: {fileID: 1938846079}
   - component: {fileID: 1938846078}
-  - component: {fileID: 1938846077}
+  - component: {fileID: 1938846080}
   m_Layer: 0
   m_Name: ImageCubeUpRight
   m_TagString: Untagged
@@ -2253,25 +2250,6 @@ Transform:
   m_Father: {fileID: 6945173}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1938846077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938846075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1938846079}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Stethoscope2
-  mDatasetName: Vuforia/UnlockAR.xml
-  mCastedBehaviour: {fileID: 1938846079}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1938846078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,7 +2319,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1938846077}
+  mPreview: {fileID: 1938846080}
+--- !u!114 &1938846080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938846075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1938846079}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Stethoscope2
+  mDatasetName: Vuforia/UnlockAR.xml
+  mCastedBehaviour: {fileID: 1938846079}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2107465917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,7 +2350,7 @@ GameObject:
   - component: {fileID: 2107465918}
   - component: {fileID: 2107465921}
   - component: {fileID: 2107465920}
-  - component: {fileID: 2107465919}
+  - component: {fileID: 2107465922}
   m_Layer: 0
   m_Name: ImageCubeUpBottomRight
   m_TagString: Untagged
@@ -2376,25 +2373,6 @@ Transform:
   m_Father: {fileID: 6945173}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2107465919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107465917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2107465921}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Heart2
-  mDatasetName: Vuforia/UnlockAR.xml
-  mCastedBehaviour: {fileID: 2107465921}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2107465920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2464,4 +2442,23 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2107465919}
+  mPreview: {fileID: 2107465922}
+--- !u!114 &2107465922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107465917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2107465921}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Heart2
+  mDatasetName: Vuforia/UnlockAR.xml
+  mCastedBehaviour: {fileID: 2107465921}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
