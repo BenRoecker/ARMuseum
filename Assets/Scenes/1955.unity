@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -913,13 +913,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Oxygen
+  mTrackableName: Lungs
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/VuforiaMars_Images.xml
-  mAspectRatio: 1.7272727
+  mDataSetPath: Vuforia/UnlockAR.xml
+  mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 0.06985
-  mHeight: 0.12065
+  mWidth: 0.135
+  mHeight: 0.135
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -955,8 +955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 553302106}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Oxygen
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
+  mTargetName: Lungs
+  mDatasetName: Vuforia/UnlockAR.xml
   mCastedBehaviour: {fileID: 553302106}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -2585,13 +2585,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Fissure
+  mTrackableName: Stethoscope2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/VuforiaMars_Images.xml
-  mAspectRatio: 1.7272727
+  mDataSetPath: Vuforia/UnlockAR.xml
+  mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 0.06985
-  mHeight: 0.12065
+  mWidth: 0.135
+  mHeight: 0.135
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2611,8 +2611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1938846079}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Fissure
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
+  mTargetName: Stethoscope2
+  mDatasetName: Vuforia/UnlockAR.xml
   mCastedBehaviour: {fileID: 1938846079}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -2708,13 +2708,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Astronaut
+  mTrackableName: Heart2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/VuforiaMars_Images.xml
-  mAspectRatio: 1.7272727
+  mDataSetPath: Vuforia/UnlockAR.xml
+  mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 0.06985
-  mHeight: 0.12065
+  mWidth: 0.135
+  mHeight: 0.135
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2734,8 +2734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2107465921}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Astronaut
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
+  mTargetName: Heart2
+  mDatasetName: Vuforia/UnlockAR.xml
   mCastedBehaviour: {fileID: 2107465921}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
