@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CanvasManagerTuto : MonoBehaviour
 {
+    private ScenesManager ScenesManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ScenesManager = GameObject.Find("ScenesManager").GetComponent<ScenesManager>();
     }
 
     // Update is called once per frame
@@ -18,6 +19,6 @@ public class CanvasManagerTuto : MonoBehaviour
 
     public void ShowResult()
     {
-        ScenesManager.Instance.EndTutoriel();
+        ScenesManager.EndTutoriel();
     }
 }

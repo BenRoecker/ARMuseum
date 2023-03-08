@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.UI;
+using TMPro;
 
-public class FrequenceManager : MonoBehaviour
+public class CardCanvasManager : MonoBehaviour
 {
+    public List<int> m_cardToPick;
+
+    public TextMeshProUGUI m_textToFill;
+
     // Start is called before the first frame update
     void Start()
     {

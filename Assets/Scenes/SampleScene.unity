@@ -1528,7 +1528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 25.599976}
+  m_AnchoredPosition: {x: 0, y: 16}
   m_SizeDelta: {x: 450, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044361801
@@ -1660,7 +1660,7 @@ MonoBehaviour:
   Image1: {fileID: 553302103}
   Image2: {fileID: 961167383}
   textTuto: {fileID: 2044361801}
-  textTutoPlace: {fileID: 0}
+  textTutoPlace: {fileID: 695278383}
   canvasManager: {fileID: 2017102394}
 --- !u!4 &2123405550
 Transform:
