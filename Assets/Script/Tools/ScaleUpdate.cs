@@ -23,6 +23,7 @@ public class ScaleUpdate : MonoBehaviour
     void Update()
     {
         textTuto.text = "Recherchez les cartes suivantes : ";
+        textTutoPlace.text = "Rapprochez les cartes pour les fusionner";
         MarkDist Image1Position = Image1.GetComponent<MarkDist>();
         MarkDist Image2Position = Image2.GetComponent<MarkDist>();
         dist = Image1Position.delta - Image2Position.delta;
@@ -41,7 +42,7 @@ public class ScaleUpdate : MonoBehaviour
         if (Image1Position.goIn && Image2Position.goIn)
         {
             textTuto.transform.parent.gameObject.SetActive(false);
-            textTutoPlace.transform.parent.gameObject.SetActive(false);
+            textTutoPlace.transform.parent.gameObject.SetActive(true);
             mod = dist.magnitude;
             if(mod < min)
             {
