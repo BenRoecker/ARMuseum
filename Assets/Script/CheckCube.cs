@@ -17,7 +17,6 @@ public class CheckCube : MonoBehaviour
     public Image BRImage;
     public Image BLImage;
 
-    public GameObject NotDetectAllCubeText;
     public GameObject Victory;
 
     public Sprite URColor;
@@ -50,7 +49,6 @@ public class CheckCube : MonoBehaviour
 
         if (statusUpRight == Status.TRACKED && statusUpLeft == Status.TRACKED && statusBottomRight == Status.TRACKED && statusBottomLeft == Status.TRACKED)
         {
-            NotDetectAllCubeText.SetActive(false);
             URImage.gameObject.SetActive(true);
             ULImage.gameObject.SetActive(true);
             BRImage.gameObject.SetActive(true);
@@ -63,7 +61,6 @@ public class CheckCube : MonoBehaviour
             ULImage.gameObject.SetActive(false);
             BRImage.gameObject.SetActive(false);
             BLImage.gameObject.SetActive(false);
-            NotDetectAllCubeText.SetActive(true);
         }
 
     }
