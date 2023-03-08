@@ -25,4 +25,19 @@ public class ScenesManager : Singleton<ScenesManager>
     {
         SceneManager.LoadScene(2);
     }
+
+    public void BackToCurrentTime()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void GoTo1942()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void GoTo1955()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
