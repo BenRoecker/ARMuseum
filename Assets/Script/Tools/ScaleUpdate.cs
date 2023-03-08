@@ -10,7 +10,7 @@ public class ScaleUpdate : MonoBehaviour
     public GameObject Image2 = null;
     Vector3 dist;
     float mod = 0;
-    float min = 0.1f;
+    float min = 0.3f;
     [SerializeField] private TextMeshProUGUI textTuto;
     [SerializeField] private TextMeshProUGUI textTutoPlace;
     [SerializeField] private CanvasManagerTuto canvasManager;
@@ -22,6 +22,7 @@ public class ScaleUpdate : MonoBehaviour
     }
     void Update()
     {
+        //TutoText
         textTuto.text = "Recherchez les cartes suivantes : ";
         MarkDist Image1Position = Image1.GetComponent<MarkDist>();
         MarkDist Image2Position = Image2.GetComponent<MarkDist>();
@@ -41,7 +42,7 @@ public class ScaleUpdate : MonoBehaviour
         if (Image1Position.goIn && Image2Position.goIn)
         {
             textTuto.transform.parent.gameObject.SetActive(false);
-            textTutoPlace.transform.parent.gameObject.SetActive(false);
+            textTutoPlace.transform.parent.gameObject.SetActive(true);
             mod = dist.magnitude;
             if(mod < min)
             {
@@ -53,5 +54,7 @@ public class ScaleUpdate : MonoBehaviour
         {
             textTuto.transform.parent.gameObject.SetActive(true);
         }
+        //TUtoTextPlace
+        textTutoPlace.text = "Rapprochez les cartes pour les fusionner";
     }
 }
