@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1279,6 +1279,7 @@ MonoBehaviour:
   m_infoButton: {fileID: 1700493973}
   m_cardQuitButton: {fileID: 1215906023}
   m_cardButton: {fileID: 1458998101}
+  m_quitButton: {fileID: 647428799}
   m_textInfo: {fileID: 1900591463}
   m_textCard: {fileID: 1832040225}
   m_infoOn: 0
@@ -3168,7 +3169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1576710333
 RectTransform:
   m_ObjectHideFlags: 0
