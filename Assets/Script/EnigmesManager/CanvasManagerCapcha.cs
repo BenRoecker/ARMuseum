@@ -28,7 +28,7 @@ public class CanvasManagerCapcha : MonoBehaviour
         m_infoButton.onClick.AddListener(InfoCanvasManager);
         m_hintButton.onClick.AddListener(HintCanvasManager);
         m_cardButton.onClick.AddListener(CardCanvasManager);
-        m_cardQuitButton.onClick.AddListener(CardCanvasManager);
+        m_cardQuitButton.onClick.AddListener(BackToLobby);
     }
 
     // Update is called once per frame
@@ -77,5 +77,10 @@ public class CanvasManagerCapcha : MonoBehaviour
             m_textCard.SetActive(false);
             m_cardOn = false;
         }
+    }
+
+    public void BackToLobby()
+    {
+       SceneManager.LoadScene(2);
     }
 }

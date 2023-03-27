@@ -11,6 +11,12 @@ public class CanvasManagerPuzzle : MonoBehaviour
     public Button m_infoButton;
     public Button m_cardQuitButton;
     public Button m_cardButton;
+    public Button m_next;
+
+    public GameObject m_image;
+    public GameObject m_text;
+    public GameObject m_canvasText;
+    public int m_indice = 0;
 
 
     public GameObject m_textInfo;
@@ -25,6 +31,7 @@ public class CanvasManagerPuzzle : MonoBehaviour
         m_infoButton.onClick.AddListener(InfoCanvasManager);
         m_cardButton.onClick.AddListener(CardCanvasManager);
         m_cardQuitButton.onClick.AddListener(CardCanvasManager);
+        m_next.onClick.AddListener(Next);
     }
 
     // Update is called once per frame
@@ -59,5 +66,18 @@ public class CanvasManagerPuzzle : MonoBehaviour
             m_textCard.SetActive(false);
             m_cardOn = false;
         }
+    }
+
+    public void Next()
+    {
+        m_text.SetActive(false);
+        m_image.SetActive(true);
+    }
+
+    public void Close()
+    {
+        m_text.SetActive(true);
+        m_image.SetActive(false);
+        m_canvasText.SetActive(false);
     }
 }
