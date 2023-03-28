@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+<QCARConfig>
   <Tracking>
+    <ImageTarget name="Surprise" size="0.135000 0.135000" />
+    <ImageTarget name="Joie" size="0.135000 0.135000" />
+    <ImageTarget name="Peur" size="0.135000 0.136321" />
+    <ImageTarget name="Determine" size="0.135000 0.135000" />
+    <ImageTarget name="Malice" size="0.135000 0.135000" />
+    <ImageTarget name="Colere" size="0.135000 0.135000" />
+    <ImageTarget name="Abandon" size="0.135000 0.135000" />
+    <ImageTarget name="Douleur" size="0.135000 0.135000" />
+    <ImageTarget name="Tristesse" size="0.135000 0.135000" />
     <ImageTarget name="Brain3" size="0.135000 0.135000" />
     <ImageTarget name="Brain2" size="0.135000 0.135000" />
     <ImageTarget name="OxygenMask" size="0.135000 0.135000" />

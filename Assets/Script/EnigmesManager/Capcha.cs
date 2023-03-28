@@ -86,7 +86,7 @@ public class Capcha : MonoBehaviour
             m_riddleSolve = true;
             m_solveCanvas.SetActive(true);
         }
-        Debug.LogError(statusHeartOne == Status.NO_POSE);
+        //Debug.LogError(statusHeartOne == Status.NO_POSE);
         Debug.Log(statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED && m_allTrackedOnce == true);
     }
 }

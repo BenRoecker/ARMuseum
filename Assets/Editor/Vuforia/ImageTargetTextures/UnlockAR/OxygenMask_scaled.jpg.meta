@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01e434002b24455c8513c02842291cf3
+guid: 2536d7ad73354a25920f00539e0e289a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -139,18 +139,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WSAPlayer
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
