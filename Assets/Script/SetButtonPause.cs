@@ -7,6 +7,7 @@ public class SetButtonPause : MonoBehaviour
 {
     public Button button1942;
     public Button button1955;
+    public Button button1960;
 
     public ScenesManager scenesManager;
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class SetButtonPause : MonoBehaviour
         scenesManager = GameObject.Find("ScenesManager").GetComponent<ScenesManager>();
         button1942.onClick.AddListener(scenesManager.GoTo1942);
         button1955.onClick.AddListener(scenesManager.GoTo1955);
+        button1960.onClick.AddListener(scenesManager.GoTo1960);
     }
 
     // Update is called once per frame

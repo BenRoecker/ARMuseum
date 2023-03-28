@@ -40,4 +40,9 @@ public class ScenesManager : Singleton<ScenesManager>
     {
         SceneManager.LoadScene(4);
     }
+
+    public void GoTo1960()
+    {
+        SceneManager.LoadScene(5);
+    }
 }

@@ -16,7 +16,7 @@ public class SetButton : MonoBehaviour
 
 
         scenesManager = GameObject.Find("ScenesManager").GetComponent<ScenesManager>();
-            buttonUseds.onClick.AddListener(scenesManager.LancementApplication);
+        buttonUseds.onClick.AddListener(scenesManager.BackToCurrentTime);
         
     }
 
