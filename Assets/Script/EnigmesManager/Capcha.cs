@@ -37,11 +37,11 @@ public class Capcha : MonoBehaviour
 
     [Header("Canvas")]
     public GameObject m_solveCanvas;
+    public GameObject m_noBrain;
+    public GameObject m_noLung;
 
     // Other used variables
     [Header("Riddle Steps")]
-    public bool m_allTrackedOnce = false;
-
     public bool m_riddleSolve = false;
 
     // Update is called once per frame
@@ -75,18 +75,26 @@ public class Capcha : MonoBehaviour
 
         var trackableLungThree = m_imageTargetLungThree.GetComponent<ObserverBehaviour>();
         var statusLungThree = trackableLungThree.TargetStatus.Status;
-
-        if(m_allTrackedOnce == false && statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED && statusBrainOne == Status.TRACKED && statusBrainTwo == Status.TRACKED && statusBrainThree == Status.TRACKED && statusLungOne == Status.TRACKED && statusLungTwo == Status.TRACKED && statusLungThree == Status.TRACKED)
-        {
-            m_allTrackedOnce = true;
-        }
         
-        if(m_allTrackedOnce == true && statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED && (statusBrainOne == Status.NO_POSE) && (statusBrainTwo == Status.NO_POSE) && (statusBrainThree == Status.NO_POSE) && (statusLungOne == Status.NO_POSE) && (statusLungTwo == Status.NO_POSE) && !(statusLungThree == Status.TRACKED)/*  && !(statusBrainOne == Status.TRACKED) && !(statusBrainTwo == Status.TRACKED) && !(statusBrainThree == Status.TRACKED) && !(statusLungOne == Status.TRACKED) && !(statusLungTwo == Status.TRACKED) && !(statusLungThree == Status.TRACKED)*/)
+        if(statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED && (statusBrainOne == Status.NO_POSE) && (statusBrainTwo == Status.NO_POSE) && (statusBrainThree == Status.NO_POSE) && (statusLungOne == Status.NO_POSE) && (statusLungTwo == Status.NO_POSE) && !(statusLungThree == Status.TRACKED)/*  && !(statusBrainOne == Status.TRACKED) && !(statusBrainTwo == Status.TRACKED) && !(statusBrainThree == Status.TRACKED) && !(statusLungOne == Status.TRACKED) && !(statusLungTwo == Status.TRACKED) && !(statusLungThree == Status.TRACKED)*/)
         {
-            m_riddleSolve = true;
             m_solveCanvas.SetActive(true);
         }
+        else if(statusLungOne == Status.TRACKED && statusLungTwo == Status.TRACKED && statusLungThree == Status.TRACKED && (statusBrainOne == Status.NO_POSE) && (statusBrainTwo == Status.NO_POSE) && (statusBrainThree == Status.NO_POSE) && (statusHeartOne == Status.NO_POSE) && (statusHeartTwo == Status.NO_POSE) && !(statusHeartThree == Status.TRACKED))
+        {
+            m_noLung.SetActive(true);
+        }
+        else if (statusBrainOne == Status.TRACKED && statusBrainTwo == Status.TRACKED && statusBrainThree == Status.TRACKED && (statusLungOne == Status.NO_POSE) && (statusLungTwo == Status.NO_POSE) && (statusLungThree == Status.NO_POSE) && (statusHeartOne == Status.NO_POSE) && (statusHeartTwo == Status.NO_POSE) && !(statusHeartThree == Status.TRACKED))
+        {
+            m_noBrain.SetActive(true);
+        }
+        else
+        {
+            m_noBrain.SetActive(false);
+            m_noLung.SetActive(false);
+        }
+
         //Debug.LogError(statusHeartOne == Status.NO_POSE);
-        Debug.Log(statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED && m_allTrackedOnce == true);
+        Debug.Log(statusHeartOne == Status.TRACKED && statusHeartTwo == Status.TRACKED && statusHeartThree == Status.TRACKED);
     }
 }
